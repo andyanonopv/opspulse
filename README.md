@@ -30,6 +30,8 @@ Beyond manual incident tracking, OpsPulse exposes a REST API to ingest simulated
 
 OpsPulse goes beyond simple CRUD operations by implementing production-grade engineering patterns:
 
+**Planned Features ->**
+
 * **Incident Lifecycle Management:** Create, triage, assign, update status (`Open`, `Investigating`, `Resolved`), and log resolution post-mortems across multiple services.
 * **External Alert Ingestion (REST API):** Secure endpoints to accept and process simulated webhook alerts from external monitoring tools.
 * **Authentication & Authorization:** Role-based access control and API token authentication (Laravel Sanctum) ensuring only authorized engineers can modify or resolve incidents.
@@ -50,7 +52,7 @@ OpsPulse goes beyond simple CRUD operations by implementing production-grade eng
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com
+   git clone https://github.com/andyanonopv/opspulse
    cd opspulse
    ```
 
@@ -91,7 +93,7 @@ OpsPulse goes beyond simple CRUD operations by implementing production-grade eng
 ### Simulating an External Monitoring Alert
 External monitoring systems can trigger or update incidents via the REST API:
 
-```bash
+<!-- ```bash
 curl -X POST http://127.0.0 \
   -H "Authorization: Bearer YOUR_API_TOKEN" \
   -H "Content-Type: application/json" \
@@ -105,7 +107,9 @@ curl -X POST http://127.0.0 \
       "region": "eu-central-1"
     }
   }'
-```
+``` -->
+
+To be configured
 
 ## 🧪 Running Tests
 
