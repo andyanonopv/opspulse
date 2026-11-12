@@ -28,7 +28,7 @@ Beyond manual incident tracking, OpsPulse exposes a REST API to ingest simulated
 
 ## ✨ Core Features & Technical Scope
 
-OpsPulse goes beyond simple CRUD operations by implementing production-grade engineering patterns:
+OpsPulse is designed to go beyond simple CRUD operations through the following planned engineering features.
 
 **Planned Features ->**
 
@@ -94,7 +94,7 @@ OpsPulse goes beyond simple CRUD operations by implementing production-grade eng
 External monitoring systems can trigger or update incidents via the REST API:
 
 <!-- ```bash
-curl -X POST http://127.0.0 \
+http://127.0.0.1:8000/api/v1/alerts \
   -H "Authorization: Bearer YOUR_API_TOKEN" \
   -H "Content-Type: application/json" \
   -H "Accept: application/json" \
